@@ -1,0 +1,2 @@
+node app.js --keyFilename ./captioncall_verified_callerid_prod.key --keyAlias captioncall_verified_callerid_prod --to 18016333861 --cid 18017689999 --sipUsername mrw_softphone_3 --sipPassword alianza --outputFilename ./data1.csv
+sipp sbcrtp.p2.sac.alianza.com:5065 -mi 10.170.1.70 -p 7777 -r 1 -l 1 -m 1 -sf verified_cid.xml -inf data1.csv

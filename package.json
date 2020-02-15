@@ -1,0 +1,16 @@
+{
+  "name": "identity_util",
+  "version": "1.0.0",
+  "description": "identity util",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Alianza",
+  "license": "ISC",
+  "dependencies": {
+    "fs": "^0.0.2",
+    "node-getopt": "^0.2.3",
+    "jsonwebtoken": "^8.5.1"
+  }
+}
