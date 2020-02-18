@@ -5,3 +5,4 @@ export key_file_name=captioncall_verified_callerid_prod.key
 export key_alias=captioncall_verified_callerid_prod
 export sip_username=mrw_softphone_3
 export sip_password=alianza
+export sip_proxy_server=sbcrtp.p2.sac.alianza.com:5065
