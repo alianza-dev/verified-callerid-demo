@@ -63,7 +63,6 @@ Allow: OPTIONS, INVITE, ACK, CANCEL, BYE, REFER, INFO, NOTIFY, UPDATE, PRACK, SU
 Content-Type: application/sdp
 Supported: replaces, 100rel
 User-Agent: Sipp
-X-AZ-Identity: [field0] 
 Content-Length: [len]
 
 v=0
@@ -100,7 +99,6 @@ Allow: OPTIONS, INVITE, ACK, CANCEL, BYE, REFER, INFO, NOTIFY, UPDATE, PRACK, SU
 Content-Type: application/sdp
 Supported: replaces, 100rel
 User-Agent: Sipp
-X-AZ-Identity: [field3] 
 Content-Length: [len]
 
 v=0
