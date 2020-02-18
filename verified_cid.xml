@@ -122,6 +122,23 @@ a=sendrecv
 <recv response="100"/>
 <recv response="180"/>
 
+<recv request="NOTIFY">
+</recv>
+
+<send>
+    <![CDATA[
+
+  SIP/2.0 200 OK
+  [last_Via:]
+  [last_From:]
+  [last_To:];tag=[call_number]
+  [last_Call-ID:]
+  [last_CSeq:]
+  Contact: <sip:[local_ip]:5060;transport=udp>
+  Content-Length:0
+]]>
+</send>
+
 <ResponseTimeRepartition value="10, 20, 30, 40, 50, 100, 150, 200"/>
 <CallLengthRepartition value="10, 50, 100, 500, 1000, 5000, 10000"/>
 
