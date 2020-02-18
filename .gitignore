@@ -3,3 +3,4 @@ node_modules
 *.key
 package_lock.json
 *.csv
+sip_credentials.sh
