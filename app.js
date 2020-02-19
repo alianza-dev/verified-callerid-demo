@@ -8,6 +8,7 @@ function parseCommandArgs() {
         [ '', 'keyAlias=KEY ALIAS', 'key alias name' ],
         [ '', 'to=TO_NUMBER', 'to number' ],
         [ '', 'cid=CALLER_ID_NUMBER', 'callerId number' ],
+        [ '', 'cname=CALLER_ID_NAME', 'callerId name' ],
         [ '', 'sipUsername=SIP_USERNAME', 'sip username' ],
         [ '', 'sipPassword=SIP_PASSWORD', 'sip password' ],
         [ '', 'outputFilename=OUTPUT_FILE_NAME', 'output filename' ]
@@ -37,6 +38,7 @@ let token = jwt.sign(payload, privateKey, { algorithm: 'RS512', keyid: args.opti
 let output = '';
 output += 'SEQUENTIAL\n';
 output += args.options.cid + ';';
+output += args.options.cname + ';';
 output += args.options.to + ';';
 output += '[authentication username=' + args.options.sipUsername + '  password=' + args.options.sipPassword + '];';
 output += token;

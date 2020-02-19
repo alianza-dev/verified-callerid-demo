@@ -39,7 +39,7 @@ Expires: 3600
 Allow: OPTIONS, INVITE, ACK, CANCEL, BYE, REFER, INFO, NOTIFY, UPDATE, PRACK, SUBSCRIBE, MESSAGE
 Supported: outbound, path
 User-Agent: Sipp
-[field2]
+[field3]
 Content-Length: 0
 ]]>
 </send>
@@ -51,19 +51,19 @@ Content-Length: 0
 
 <send retrans="1500">
 <![CDATA[
-INVITE sip:[field1]@alianza.com:5065 SIP/2.0
+INVITE sip:[field2]@alianza.com:5065 SIP/2.0
 Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
 Max-Forwards: 70
 Contact: <sip:[field0]@[local_ip]:[local_port]>
-To: <sip:[field1]@alianza.com:5065>
-From: "MOM" <sip:[field0]@alianza.com>;tag=[pid]SIPpTag00[call_number]
+To: <sip:[field2]@alianza.com:5065>
+From: "[field1]" <sip:[field0]@alianza.com>;tag=[pid]SIPpTag00[call_number]
 Call-ID: [call_id]
 CSeq: [cseq] INVITE
 Allow: OPTIONS, INVITE, ACK, CANCEL, BYE, REFER, INFO, NOTIFY, UPDATE, PRACK, SUBSCRIBE, MESSAGE
 Content-Type: application/sdp
 Supported: replaces, 100rel
 User-Agent: Sipp
-X-AZ-Identity: [field3]
+X-AZ-Identity: [field4]
 Content-Length: [len]
 
 v=0
@@ -87,20 +87,20 @@ a=sendrecv
 
 <send retrans="1500">
 <![CDATA[
-INVITE sip:[field1]@alianza.com:5065 SIP/2.0
+INVITE sip:[field2]@alianza.com:5065 SIP/2.0
 Via: SIP/2.0/[transport] [local_ip]:[local_port];branch=[branch]
 Max-Forwards: 70
 Contact: <sip:[field0]@[local_ip]:[local_port]>
-[field2]
-To: <sip:[field1]@alianza.com:5065>
-From: "MOM"<sip:[field0]@alianza.com>;tag=[pid]SIPpTag00[call_number]
+[field3]
+To: <sip:[field2]@alianza.com:5065>
+From: "[field1]"<sip:[field0]@alianza.com>;tag=[pid]SIPpTag00[call_number]
 Call-ID: [call_id]
 CSeq: [cseq] INVITE
 Allow: OPTIONS, INVITE, ACK, CANCEL, BYE, REFER, INFO, NOTIFY, UPDATE, PRACK, SUBSCRIBE, MESSAGE
 Content-Type: application/sdp
 Supported: replaces, 100rel
 User-Agent: Sipp
-X-AZ-Identity: [field3] 
+X-AZ-Identity: [field4] 
 Content-Length: [len]
 
 v=0
